@@ -34,21 +34,22 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
-import com.android.settings.applications.LayoutPreference;
+import com.statix.sparks.preferences.CustomSettingsPreferenceFragment;
 
-public class System extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+public class System extends CustomSettingsPreferenceFragment {
     private static final String TAG = "System";
+    private static final String ADVANCED_REBOOT = "advanced_reboot";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system);
+        addCustomPreference(findPreference(ADVANCED_REBOOT), SECURE_TWO_STATE, STATE_ON);
 
         ContentResolver resolver = getActivity().getContentResolver();
     }
-    
+
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.SPARKS;
