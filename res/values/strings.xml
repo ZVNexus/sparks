@@ -78,4 +78,15 @@
     <string name="theme_accent_picker_default">Default</string>
     <string name="accent_picker_material_colors">Material palette</string>
     <string name="accent_picker_custom_colors">User requested</string>
+
+    <!-- Tuner strings -->
+    <string name="status_bar_tuner_title">Status bar items</string>
+    <string name="status_bar_tuner_summary">Edit status bar icons and options</string>
+
+    <string name="navbar_tuner_title">Edit navigation bar</string>
+    <string name="navbar_tuner_summary">Edit the navigation bar layout and buttons</string>
+
+    <string name="lock_screen_shortcuts_title">Lock screen shortcuts</string>
+    <string name="lock_screen_shortcuts_summary">Manage lock screen bottom shortcuts</string>
+
 </resources>

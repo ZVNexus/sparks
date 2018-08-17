@@ -24,4 +24,12 @@
         android:summary="@string/unlock_quick_unlock_control_summary"
         android:defaultValue="false" />
 
+    <Preference
+        android:title="@string/lock_screen_shortcuts_title"
+        android:summary="@string/lock_screen_shortcuts_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.tuner.LockscreenTunerActivity" />
+    </Preference>
+
 </PreferenceScreen>
