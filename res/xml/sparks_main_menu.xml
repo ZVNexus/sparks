@@ -31,6 +31,11 @@
        android:title="@string/misc_category" />
 
    <Preference
+       android:fragment="com.statix.sparks.fragments.navigation.Navigation"
+       android:icon="@drawable/ic_navigation"
+       android:title="@string/navigation_category" />
+
+   <Preference
        android:fragment="com.statix.sparks.fragments.statusbar.Statusbar"
        android:icon="@drawable/ic_statusbar"
        android:title="@string/statusbar_category" />

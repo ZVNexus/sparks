@@ -16,6 +16,7 @@
     <string name="sparks_summary">Electrify your experience</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="misc_category">Miscellaneous</string>
+    <string name="navigation_category">Navigation</string>
     <string name="statusbar_category">Statusbar</string>
     <string name="system_category">System</string>
 
