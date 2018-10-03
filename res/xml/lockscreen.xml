@@ -18,4 +18,10 @@
     android:title="@string/lockscreen_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.statix.sparks.preferences.SystemSettingSwitchPreference
+        android:key="lockscreen_quick_unlock_control"
+        android:title="@string/unlock_quick_unlock_control_title"
+        android:summary="@string/unlock_quick_unlock_control_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
