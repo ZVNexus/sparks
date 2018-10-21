@@ -90,4 +90,8 @@
     <string name="lock_screen_shortcuts_title">Lock screen shortcuts</string>
     <string name="lock_screen_shortcuts_summary">Manage lock screen bottom shortcuts</string>
 
+    <!-- Gestures -->
+    <!--Double Tap to Sleep Lockscreen-->
+    <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
+
 </resources>
