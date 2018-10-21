@@ -25,6 +25,30 @@
 
 	<!-- Sparks Menus -->
 
+        <!-- Gestures -->
+        <activity android:name="Settings$GesturesSettingsActivity"
+                android:label="@string/gestures_category"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.statix.sparks.fragments.gestures.Gestures" />
+        </activity>
+
+        <!-- Lockscreen -->
+        <activity android:name="Settings$LockscreenSettingsActivity"
+                android:label="@string/lockscreen_category"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.statix.sparks.fragments.lockscreen.Lockscreen" />
+        </activity>
+
         <!-- Miscellaneous -->
         <activity android:name="Settings$MiscSettingsActivity"
                 android:label="@string/misc_category"
@@ -35,6 +59,18 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.statix.sparks.fragments.misc.Misc" />
+        </activity>
+
+        <!-- Navigation -->
+        <activity android:name="Settings$NavigationSettingsActivity"
+                android:label="@string/navigation_category"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.statix.sparks.fragments.navigation.Navigation" />
         </activity>
 
         <!-- Statusbar -->
