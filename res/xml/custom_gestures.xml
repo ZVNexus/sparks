@@ -19,4 +19,9 @@
         android:key="double_tap_sleep_anywhere"
         android:title="@string/double_tap_sleep_lockscreen"
         android:defaultValue="true" />
+
+    <com.statix.sparks.preferences.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/double_tap_sleep_gesture_title"
+        android:defaultValue="false" />
 </PreferenceScreen>
