@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="sparks_title">Sparks</string>
+    <string name="sparks">Sparks</string>
+    <string name="sparks_summary">Eletrifique sua Experiência</string>
+    <string name="lockscreen_category">Tela de Bloqueio</string>
+    <string name="misc_category">Ajustes Diversos</string>
+    <string name="navigation_category">Barra de Navegação</string>
+    <string name="statusbar_category">Barra de Status</string>
+    <string name="system_category">Sistema</string>
+
+    <string name="system_global_actions_category">Ações Globais</string>
+
+    <!-- Global Actions -->
+    <string name="global_actions_title">Power Menu</string>
+    <string name="global_actions_summary">Selecione o que mostrar ao pressionar o botão power</string>
+    <string name="global_actions_power">Desligar</string>
+    <string name="global_actions_restart">Reiniciar</string>
+    <string name="global_actions_airplane">Modo Avião</string>
+    <string name="global_actions_settings">Configurações</string>
+    <string name="global_actions_lockdown">Bloquear</string>
+    <string name="global_actions_soundpanel">Painel de Som</string>
+    <string name="global_actions_users">Usuários</string>
+    <string name="global_actions_screenshot">Captura de Tela</string>
+    <string name="global_actions_screenrecord">Gravação de Tela</string>
+    <string name="global_actions_flashlight">Lanterna</string>
+    <string name="global_actions_advanced_reboot_title">Ativar reinício avançado</string>
+    <string name="global_actions_advanced_reboot_summary">Mostrar opções para recovery e bootloader</string>
+
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_category">Filtro de Intensidade de Brilho</string>
+    <string name="smart_pixels_summary">Economizar bateria desligando pixels extras</string>
+    <string name="smart_pixels_enable_title">Ativar Smart Pixels</string>
+    <string name="smart_pixels_enable_summary">Desativa pixels para reduzir o consumo de energia</string>
+    <string name="smart_pixels_on_power_save_title">Ativação automática no modo economia de bateria</string>
+    <string name="smart_pixels_on_power_save_summary">Ativar Smart Pixels quando a economia de bateria está ativada</string>
+    <string name="smart_pixels_percent">Porcentagem de pixels a serem desativados</string>
+    <string name="smart_pixels_shift">Prevenir Burn-in alternando pixels a cada</string>
+
+    <!-- Battery customizations -->
+    <string name="battery_icons_category">Customização de Bateria</string>
+    <string name="battery_style_category">Bateria</string>
+    <string name="battery_style_title">Estilo de Bateria</string>
+    <string name="battery_style_summary">Selecione a aparência do ícone da bateria</string>
+    <string name="battery_style_port">Retrato</string>
+    <string name="battery_style_circle">Círculo</string>
+    <string name="battery_style_dotted_circle">Círculo Pontilhado</string>
+    <string name="battery_style_hidden">Oculto</string>
+    <string name="battery_style_text">Texto</string>
+    <string name="show_battery_percent_title">Mostrar Porcentagem</string>
+    <string name="battery_percent_none">Não Mostrar</string>
+    <string name="battery_percent_outside">Mostrar ao lado do ícone</string>
+    <string name="battery_percent_inside">Mostrar dentro do ícone</string>
+
+    <!-- Lockscreen quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Desbloqueio rápido</string>
+    <string name="unlock_quick_unlock_control_summary">Desbloquear automaticamente quando o PIN/senha for digitado</string>
+
+    <!-- Themes -->
+    <string name="theme_category_title">Opções de Tema</string>
+    <string name="disable_themes_installed_title">Os temas de sistema não estão disponíveis para evitar conflitos com o Substratum. Desinstale-o se quiser usar os temas.</string>
+    <string name="disable_accents_installed_title">A seleção de cor de destaque está indisponível para evitar conflitos com o Substratum. Desinstale-o se quiser mudar as cores.</string>
+    <string name="accent_picker_dialog_title">Selecione uma cor de destaque (Accent Color)</string>
+    <string name="theme_accent_picker_title">Cor de Destaque</string>
+    <string name="theme_accent_picker_summary">Selecione a cor de destaque do tema do sistema</string>
+    <string name="theme_accent_picker_default">Padrão</string>
+    <string name="accent_picker_material_colors">Paleta de Cores Material</string>
+    <string name="accent_picker_custom_colors">Pedidos pelos Usuários</string>
+
+    <!-- Tuner strings -->
+    <string name="status_bar_tuner_title">Itens da Barra de Status</string>
+    <string name="status_bar_tuner_summary">Editar ícones e opções da Barra de Status</string>
+
+    <string name="navbar_tuner_title">Editar Barra de Navegação</string>
+    <string name="navbar_tuner_summary">Editar o layout e os botões da Barra de Navegação</string>
+
+    <string name="lock_screen_shortcuts_title">Atalhos da Tela de Bloqueio</string>
+    <string name="lock_screen_shortcuts_summary">Gerenciar atalhos de botões na Tela de Bloqueio</string>
+
+</resources>
