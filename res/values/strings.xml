@@ -97,4 +97,10 @@
     <string name="double_tap_sleep_gesture_title">Double tap to sleep on status bar</string>
     <string name="aosp_gesture_title">AOSP Gestures</string>
 
+    <!-- Notifications -->
+    <string name="notifications_category">Notifications</string>
+    <!-- Notifications while screen on -->
+    <string name="notification_sound_vib_screen_on_title">Noisy notifications if screen on</string>
+    <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
+
 </resources>

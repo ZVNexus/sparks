@@ -17,4 +17,14 @@
     android:title="@string/misc_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+	android:title="@string/notifications_category">
+
+        <com.statix.sparks.preferences.SystemSettingSwitchPreference
+            android:key="notification_sound_vib_screen_on"
+            android:title="@string/notification_sound_vib_screen_on_title"
+            android:summary="@string/notification_sound_vib_screen_on_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
 </PreferenceScreen>
