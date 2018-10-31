@@ -16,15 +16,22 @@
 
 package com.statix.sparks.fragments.misc;
 
+import android.content.ContentResolver;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import com.android.settings.R;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.util.du.Utils;
 import com.statix.sparks.preferences.CustomSettingsPreferenceFragment;
 
-public class Misc extends CustomSettingsPreferenceFragment {
+public class Misc extends CustomSettingsPreferenceFragment implements OnPreferenceChangeListener {
     private static final String TAG = "Misc";
+    private ListPreference mRecentsComponentType;
+    private static final String RECENTS_COMPONENT_TYPE = "recents_component";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -32,6 +39,16 @@ public class Misc extends CustomSettingsPreferenceFragment {
 
         addPreferencesFromResource(R.xml.misc);
 
+        final ContentResolver resolver = getActivity().getContentResolver();
+        final PreferenceScreen prefSet = getPreferenceScreen();
+
+        // recents component type
+        mRecentsComponentType = (ListPreference) findPreference(RECENTS_COMPONENT_TYPE);
+        int type = Settings.System.getInt(resolver,
+		Settings.System.RECENTS_COMPONENT, 0);
+        mRecentsComponentType.setValue(String.valueOf(type));
+        mRecentsComponentType.setSummary(mRecentsComponentType.getEntry());
+        mRecentsComponentType.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -47,6 +64,23 @@ public class Misc extends CustomSettingsPreferenceFragment {
     @Override
     public void onPause() {
         super.onPause();
+    }
+
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference == mRecentsComponentType) {
+            int type = Integer.valueOf((String) objValue);
+            int index = mRecentsComponentType.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.RECENTS_COMPONENT, type);
+            mRecentsComponentType.setSummary(mRecentsComponentType.getEntries()[index]);
+            if (type == 1) { // Disable swipe up gesture, if oreo type selected
+               Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.SWIPE_UP_TO_SWITCH_APPS_ENABLED, 0);
+            }
+            Utils.showSystemUiRestartDialog(getContext());
+            return true;
+        }
+        return false;
     }
 
 }
