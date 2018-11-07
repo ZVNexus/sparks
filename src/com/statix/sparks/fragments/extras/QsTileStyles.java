@@ -91,6 +91,9 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
 
         LinearLayout teardrop = mView.findViewById(R.id.QsTileStyleTearDrop);
         setLayout("4", teardrop);
+
+        LinearLayout hexagon = mView.findViewById(R.id.QsTileStyleHexagon);
+        setLayout("5", hexagon);
     }
 
     @Override
@@ -139,6 +142,7 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
         LinearLayout split = mView.findViewById(R.id.QsTileStyleSplit);
         LinearLayout superbubble = mView.findViewById(R.id.QsTileStyleSuperBubble);
         LinearLayout teardrop = mView.findViewById(R.id.QsTileStyleTearDrop);
+        LinearLayout hexagon = mView.findViewById(R.id.QsTileStyleHexagon);
 
         TypedValue typedValue = new TypedValue();
         res.getValue(R.dimen.qs_styles_layout_opacity, typedValue, true);
@@ -149,26 +153,37 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
             split.setAlpha(mLayoutOpacity);
             superbubble.setAlpha(mLayoutOpacity);
             teardrop.setAlpha(mLayoutOpacity);
+            hexagon.setAlpha(mLayoutOpacity);
         } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 2 )) {
             framed.setAlpha(mLayoutOpacity);
             split.setAlpha((float) 1.0);
             superbubble.setAlpha(mLayoutOpacity);
             teardrop.setAlpha(mLayoutOpacity);
+            hexagon.setAlpha(mLayoutOpacity);
         } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 3 )) {
             framed.setAlpha(mLayoutOpacity);
             split.setAlpha(mLayoutOpacity);
             superbubble.setAlpha((float) 1.0);
             teardrop.setAlpha(mLayoutOpacity);
+            hexagon.setAlpha(mLayoutOpacity);
         } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 4 )) {
             framed.setAlpha(mLayoutOpacity);
             split.setAlpha(mLayoutOpacity);
             superbubble.setAlpha(mLayoutOpacity);
             teardrop.setAlpha((float) 1.0);
+            hexagon.setAlpha(mLayoutOpacity);
+        } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 5 )) {
+            framed.setAlpha(mLayoutOpacity);
+            split.setAlpha(mLayoutOpacity);
+            superbubble.setAlpha(mLayoutOpacity);
+            teardrop.setAlpha(mLayoutOpacity);
+            hexagon.setAlpha((float) 1.0);
         } else {
             framed.setAlpha((float) 1.0);
             split.setAlpha((float) 1.0);
             superbubble.setAlpha((float) 1.0);
             teardrop.setAlpha((float) 1.0);
+            hexagon.setAlpha((float) 1.0);
         }
     }
 }

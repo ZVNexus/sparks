@@ -41,6 +41,7 @@
                 android:columnOrderPreserved="true">
 
                 <include layout="@layout/qs_styles_framed" />
+                <include layout="@layout/qs_styles_hexagon" />
                 <include layout="@layout/qs_styles_split" />
                 <include layout="@layout/qs_styles_superbubble" />
                 <include layout="@layout/qs_styles_teardrop" />
