@@ -188,4 +188,8 @@
     <string name="network_traffic_state_title">Show net activity in expanded statusbar</string>
     <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
 
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G icon</string>
+    <string name="show_fourg_icon_summary">Display 4G icon instead of LTE icon</string>
+
 </resources>

@@ -58,4 +58,10 @@
         android:summary="@string/status_traffic_summary"
         android:fragment="com.statix.sparks.fragments.statusbar.TrafficIndicators" />
        
+        <com.statix.sparks.preferences.SystemSettingSwitchPreference
+        android:key="show_fourg_icon"
+        android:title="@string/show_fourg_icon_title"
+        android:summary="@string/show_fourg_icon_summary"
+        android:defaultValue="false"/>
+
 </PreferenceScreen>
