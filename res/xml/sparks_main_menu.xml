@@ -36,7 +36,7 @@
        android:title="@string/misc_category" />
 
    <Preference
-       android:fragment="com.statix.sparks.fragments.navigation.Navigation"
+       android:fragment="com.android.settings.smartnav.NavigationBarSettings"
        android:icon="@drawable/ic_navigation"
        android:title="@string/navigation_category" />
 
