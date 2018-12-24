@@ -18,6 +18,15 @@
     android:title="@string/lockscreen_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.statix.sparks.preferences.SystemSettingListPreference
+    android:key="weather_lockscreen_unit"
+    android:dialogTitle="@string/weather_unit"
+    android:title="@string/weather_unit"
+    android:summary="%s"
+    android:entries="@array/weather_unit_entries"
+    android:entryValues="@array/weather_unit_values"
+    android:defaultValue="0" />
+
     <com.statix.sparks.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_quick_unlock_control"
         android:title="@string/unlock_quick_unlock_control_title"
