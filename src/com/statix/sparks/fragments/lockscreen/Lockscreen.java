@@ -22,9 +22,12 @@ import android.support.v7.preference.PreferenceScreen;
 import com.android.settings.R;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.statix.sparks.preferences.CustomSettingsPreferenceFragment;
+import com.statix.sparks.preferences.SystemSettingListPreference;
 
 public class Lockscreen extends CustomSettingsPreferenceFragment {
     private static final String TAG = "Lockscreen";
+
+    private static final String KEY_WEATHER_TEMP = "weather_lockscreen_unit";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,12 @@ public class Lockscreen extends CustomSettingsPreferenceFragment {
 
         addPreferencesFromResource(R.xml.lockscreen);
 
+        SystemSettingListPreference mWeatherTemp =
+                (SystemSettingListPreference) findPreference(KEY_WEATHER_TEMP);
+        if (!com.android.internal.util.du.Utils.isPackageInstalled(
+                getActivity(), "com.android.providers.weather")) {
+            getPreferenceScreen().removePreference(mWeatherTemp);
+        }
     }
 
     @Override
