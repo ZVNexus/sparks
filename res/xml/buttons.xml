@@ -145,4 +145,11 @@
 
     </PreferenceCategory>
 
+    <Preference
+        android:key="button_brightness"
+        android:title="@string/button_backlight_title"
+        android:summary="@string/button_backlight_summary"
+        android:persistent="false"
+        android:fragment="com.statix.sparks.fragments.buttons.ButtonBrightness" />
+
 </PreferenceScreen>
