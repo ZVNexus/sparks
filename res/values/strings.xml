@@ -64,10 +64,6 @@
     <string name="battery_percent_outside">Show beside icon</string>
     <string name="battery_percent_inside">Show inside icon</string>
 
-    <!-- Lockscreen quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
-
     <!-- Themes -->
     <string name="theme_category_title">Theme options</string>
     <string name="disable_themes_installed_title">System themes are unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use these themes instead.</string>
