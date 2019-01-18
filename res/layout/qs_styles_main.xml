@@ -45,6 +45,7 @@
                 <include layout="@layout/qs_styles_split" />
                 <include layout="@layout/qs_styles_superbubble" />
                 <include layout="@layout/qs_styles_teardrop" />
+                <include layout="@layout/qs_styles_cookie" />
 
             </GridLayout>
         </HorizontalScrollView>
