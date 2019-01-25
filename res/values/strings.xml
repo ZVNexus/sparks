@@ -181,4 +181,11 @@
     <string name="weather_unit_metric" translatable="false">Celsius</string>
     <string name="weather_unit_imperial" translatable="false">Fahrenheit</string>
 
+    <!-- Network Traffic -->
+    <string name="status_traffic_title">Customize net activity indicators</string>
+    <string name="status_traffic_summary">Options for the statusbar network activity indicators</string>
+    <string name="traffic_title">Net activity indicators</string>
+    <string name="network_traffic_state_title">Show net activity in expanded statusbar</string>
+    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+
 </resources>

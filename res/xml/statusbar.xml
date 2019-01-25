@@ -52,4 +52,10 @@
             android:fragment="com.statix.sparks.fragments.statusbar.ClockOptions" />
 
     </PreferenceCategory>
+
+    <Preference
+        android:title="@string/status_traffic_title"
+        android:summary="@string/status_traffic_summary"
+        android:fragment="com.statix.sparks.fragments.statusbar.TrafficIndicators" />
+       
 </PreferenceScreen>
