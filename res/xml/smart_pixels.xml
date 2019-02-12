@@ -31,7 +31,7 @@
         android:summary="@string/smart_pixels_on_power_save_summary"
         android:defaultValue="false" />
 
-    <com.statix.sparks.preferences.SystemSettingListPreference
+    <com.statix.support.preferences.SystemSettingListPreference
         android:key="smart_pixels_pattern"
         android:entries="@array/smart_pixels_percent_strings"
         android:entryValues="@array/smart_pixels_percent_values"
@@ -39,7 +39,7 @@
         android:title="@string/smart_pixels_percent"
         android:dialogTitle="@string/smart_pixels_percent" />
 
-    <com.statix.sparks.preferences.SystemSettingListPreference
+    <com.statix.support.preferences.SystemSettingListPreference
         android:key="smart_pixels_shift_timeout"
         android:entries="@array/smart_pixels_shift_times"
         android:entryValues="@array/smart_pixels_shift_values"

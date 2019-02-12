@@ -34,7 +34,7 @@ import com.android.settings.Utils;
 
 import com.android.internal.logging.nano.MetricsProto;
 
-import com.statix.sparks.preferences.CustomSeekBarPreference;
+import com.statix.support.preferences.CustomSeekBarPreference;
 
 public class TrafficIndicators extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 

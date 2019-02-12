@@ -27,7 +27,7 @@
 
      <PreferenceCategory
         android:title="@string/battery_icons_category">
-         <com.statix.sparks.preferences.SystemSettingListPreference
+         <com.statix.support.preferences.SystemSettingListPreference
             android:key="status_bar_battery_style"
             android:title="@string/battery_style_title"
             android:summary="%s"
@@ -35,7 +35,7 @@
             android:entries="@array/status_bar_battery_style_entries"
             android:entryValues="@array/status_bar_battery_style_values"
             android:defaultValue="0" />
-         <com.statix.sparks.preferences.SystemSettingListPreference
+         <com.statix.support.preferences.SystemSettingListPreference
             android:key="show_battery_percent"
             android:title="@string/show_battery_percent_title"
             android:entries="@array/battery_percent_entries"
@@ -58,7 +58,7 @@
         android:summary="@string/status_traffic_summary"
         android:fragment="com.statix.sparks.fragments.statusbar.TrafficIndicators" />
        
-        <com.statix.sparks.preferences.SystemSettingSwitchPreference
+        <com.statix.support.preferences.SystemSettingSwitchPreference
         android:key="show_fourg_icon"
         android:title="@string/show_fourg_icon_title"
         android:summary="@string/show_fourg_icon_summary"

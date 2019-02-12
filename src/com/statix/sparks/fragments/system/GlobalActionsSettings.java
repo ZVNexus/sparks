@@ -20,6 +20,7 @@ import android.os.UserHandle;
 import android.provider.Settings;
 
 import com.android.settings.R;
+
 import com.statix.sparks.preferences.CustomSettingsPreferenceFragment;
 
 public class GlobalActionsSettings extends CustomSettingsPreferenceFragment {

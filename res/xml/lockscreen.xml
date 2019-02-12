@@ -18,7 +18,7 @@
     android:title="@string/lockscreen_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.statix.sparks.preferences.SystemSettingListPreference
+    <com.statix.support.preferences.SystemSettingListPreference
     android:key="weather_lockscreen_unit"
     android:dialogTitle="@string/weather_unit"
     android:title="@string/weather_unit"
@@ -35,19 +35,19 @@
             android:targetClass="com.android.systemui.tuner.LockscreenTunerActivity" />
     </Preference>
 
-    <com.statix.sparks.preferences.SystemSettingSwitchPreference
+    <com.statix.support.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_clock"
         android:title="@string/lockscreen_clock_title"
         android:summary="@string/lockscreen_clock_summary"
         android:defaultValue="true" />
 
-    <com.statix.sparks.preferences.SystemSettingSwitchPreference
+    <com.statix.support.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_info"
         android:title="@string/lockscreen_info_title"
         android:summary="@string/lockscreen_info_summary"
         android:defaultValue="true" />
 
-    <com.statix.sparks.preferences.SystemSettingListPreference
+    <com.statix.support.preferences.SystemSettingListPreference
         android:key="lockscreen_clock_selection"
         android:title="@string/lockscreen_clock_selection_title"
         android:entries="@array/lockscreen_clock_selection_entries"

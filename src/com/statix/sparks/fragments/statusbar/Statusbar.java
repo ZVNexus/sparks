@@ -26,8 +26,8 @@ import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import com.android.settings.R;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settingslib.graph.BatteryMeterDrawableBase;
-import com.statix.sparks.preferences.CustomSettingsPreferenceFragment;
 
+import com.statix.sparks.preferences.CustomSettingsPreferenceFragment;
 
 public class Statusbar extends CustomSettingsPreferenceFragment implements
 	    OnPreferenceChangeListener {

@@ -21,8 +21,9 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import com.android.settings.R;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+
 import com.statix.sparks.preferences.CustomSettingsPreferenceFragment;
-import com.statix.sparks.preferences.SystemSettingListPreference;
+import com.statix.support.preferences.SystemSettingListPreference;
 
 public class Lockscreen extends CustomSettingsPreferenceFragment {
     private static final String TAG = "Lockscreen";
