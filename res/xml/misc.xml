@@ -20,13 +20,18 @@
     <PreferenceCategory
 	android:title="@string/notifications_category">
 
-        <com.statix.sparks.preferences.SystemSettingSwitchPreference
+        <com.statix.support.preferences.SystemSettingSwitchPreference
             android:key="notification_sound_vib_screen_on"
             android:title="@string/notification_sound_vib_screen_on_title"
             android:summary="@string/notification_sound_vib_screen_on_summary"
             android:defaultValue="true" />
 
     </PreferenceCategory>
+  
+    <com.statix.sparks.preferences.RecentsIconPackPreference
+         android:key="recents_icon_pack"
+         android:title="@string/recents_icon_pack_title"
+         android:summary="@string/recents_icon_pack_summary" />
 
     <PreferenceCategory
          android:key="recents_ui_aosp_recents_category"
@@ -39,11 +44,6 @@
             android:entries="@array/recents_component_type_title_entries"
             android:defaultValue="0"
             android:entryValues="@array/recents_component_type_title_values"/>
-
-        <Preference
-            android:key="recents_icon_pack"
-            android:title="@string/recents_icon_pack_title"
-            android:summary="@string/recents_icon_pack_summary" />
 
      </PreferenceCategory>
 
