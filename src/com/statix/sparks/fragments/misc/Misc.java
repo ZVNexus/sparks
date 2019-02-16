@@ -33,7 +33,7 @@ import android.widget.ListView;
 
 import com.android.settings.R;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.internal.util.du.Utils;
+import com.android.internal.util.du.ActionUtils;
 
 import com.statix.sparks.preferences.CustomSettingsPreferenceFragment;
 
@@ -96,7 +96,7 @@ public class Misc extends CustomSettingsPreferenceFragment implements OnPreferen
                Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.SWIPE_UP_TO_SWITCH_APPS_ENABLED, 0);
             }
-            Utils.showSystemUiRestartDialog(getContext());
+            ActionUtils.showSystemUiRestartDialog(getContext());
             return true;
         }
         return false;
