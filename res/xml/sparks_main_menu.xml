@@ -21,6 +21,11 @@
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
    <Preference
+       android:fragment="com.statix.sparks.fragments.buttons.Buttons"
+       android:icon="@drawable/ic_buttons"
+       android:title="@string/buttons_category" />
+
+   <Preference
        android:fragment="com.statix.sparks.fragments.gestures.Gestures"
        android:icon="@drawable/ic_gestures"
        android:title="@string/gestures_category" />

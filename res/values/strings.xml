@@ -14,6 +14,7 @@
     <string name="sparks_title">Sparks</string>
     <string name="sparks">Sparks</string>
     <string name="sparks_summary">Electrify your experience</string>
+    <string name="buttons_category">Buttons</string>
     <string name="gestures_category">Gestures</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="misc_category">Miscellaneous</string>
